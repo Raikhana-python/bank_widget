@@ -1,16 +1,13 @@
-# Python
+# Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
 *$py.class
-*.so
-.Python
 
 # Virtual environments
-env/
 venv/
+env/
 ENV/
-env.bak/
-venv.bak/
+.venv
 
 # IDE
 .idea/
@@ -26,6 +23,9 @@ Thumbs.db
 .pytest_cache/
 .coverage
 htmlcov/
+
+# MyPy
+.mypy_cache/
 
 # Project specific
 *.log
