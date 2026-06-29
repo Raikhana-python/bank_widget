@@ -59,5 +59,3 @@ class TestSortByDate:
     def test_sort_empty_list(self):
         result = sort_by_date([])
         assert result == []
-
-
