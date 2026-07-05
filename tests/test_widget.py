@@ -1,5 +1,3 @@
-"""Тесты для основных функций виджета."""
-import pytest
 from src.widget import mask_account_card, get_date
 
 
