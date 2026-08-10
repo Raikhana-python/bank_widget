@@ -7,12 +7,12 @@ os.makedirs(LOG_DIR, exist_ok=True)
 
 # Настраиваем логгер для этого модуля
 logger = logging.getLogger(__name__)
-logger.setLevel(logging.INFO)
+logger.setLevel(logging.DEBUG)
 
 # Обработчик для записи в файл (перезапись при каждом запуске)
 log_file = os.path.join(LOG_DIR, f'{__name__}.log')
 file_handler = logging.FileHandler(log_file, mode='w', encoding='utf-8')
-file_handler.setLevel(logging.INFO)
+file_handler.setLevel(logging.DEBUG)
 
 # Формат: время - имя модуля - уровень - сообщение
 formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
